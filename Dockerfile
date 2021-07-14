@@ -1,10 +1,12 @@
 FROM frolvlad/alpine-python2
 
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup --home /home/appuser
-USER appuser
 
 COPY AndroLabServer /home/appuser/AndroLabServer
 WORKDIR /home/appuser/AndroLabServer
+
+RUN chown -R appuser:appgroup .
+USER appuser
 
 RUN pip2 install flask
 RUN pip2 install flask-sqlalchemy
