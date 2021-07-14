@@ -53,3 +53,9 @@ If you are too impatient to use the application or read the usage guide then fol
 
 4) Use the credentials dinesh/Dinesh@123$ or jack/Jack@123$ and start using the application
 
+# Run Server
+
+As simple as
+```
+$ docker run -dit -p 8888:8888 --restart=always habibiefaried/androvulnlab
+```
