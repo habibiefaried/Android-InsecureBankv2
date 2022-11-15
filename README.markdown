@@ -57,5 +57,5 @@ If you are too impatient to use the application or read the usage guide then fol
 
 As simple as
 ```
-$ docker run -dit -p 8888:8888 --restart=always habibiefaried/androvulnlab
+docker run -dit -p 8888:8888 --restart=always habibiefaried/androvulnlab
 ```
